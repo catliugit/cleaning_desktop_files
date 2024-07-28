@@ -40,7 +40,7 @@ After execution, check the Downloads folder to see your files neatly organized i
 Before Running the Script: The Downloads folder may appear cluttered with various file types. [See Example Here](https://github.com/catliugit/cleaning_desktop_files/blob/main/Before%20Cleanse.PNG).
 After Running the Script: Files are organized into categorized and dated subfolders. Here are the expected outputs:
 [Month Year Folders, ](https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse.PNG).
-[File Type Folders], (https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse_Folders.PNG).
+[File Type Folders, ] (https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse_Folders.PNG).
 [File Classified in the Folder](https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse_2.PNG).
 
 ## Logging Output
