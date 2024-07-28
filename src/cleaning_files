@@ -1,6 +1,7 @@
 import os  # Interacting with the file and directory operations.
 import shutil  # Allows copying and moving files.
 from datetime import datetime  # Provides classes for manipulating dates and times.
+import logging  # Provides a flexible framework for emitting log messages, which is useful for tracking and debugging.
 
 # Path to the Downloads folder
 downloads_path = os.path.expanduser('~/Downloads')
