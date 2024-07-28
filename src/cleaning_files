@@ -27,3 +27,53 @@ def get_destination_folder(filename):
             return folder
     return None
 
+# Track created folders and organized files
+created_folders = set()
+organized_files = False
+
+try:
+    for filename in os.listdir(downloads_path):  # List all files in the Downloads directory.
+        file_path = os.path.join(downloads_path, filename)
+        if os.path.isfile(file_path):  # Process only files
+            destination_folder = get_destination_folder(filename)
+            
+            if destination_folder:
+                # Organize files by month-year of creation
+                creation_time = os.path.getctime(file_path)
+                date = datetime.fromtimestamp(creation_time)
+                month_year_folder_path = os.path.join(downloads_path, date.strftime('%B_%Y'))
+
+                # Ensure month-year and destination folders exist
+                create_folder_if_not_exists(month_year_folder_path)
+                created_folders.add(month_year_folder_path)
+
+                destination_folder_path = os.path.join(month_year_folder_path, destination_folder)
+                create_folder_if_not_exists(destination_folder_path)
+                
+                # Handle potential file name conflicts
+                target_path = os.path.join(destination_folder_path, filename)
+                if os.path.exists(target_path):
+                    base, extension = os.path.splitext(filename)
+                    counter = 1
+                    while os.path.exists(target_path):
+                        target_path = os.path.join(destination_folder_path, f"{base}_copy{counter}{extension}")
+                        counter += 1
+
+                # Move the file to the destination folder
+                shutil.move(file_path, target_path)
+                created_folders.add(destination_folder_path)
+                organized_files = True
+            else:
+                logging.warning(f"File '{filename}' did not match any predefined folder categories.")
+
+    # Log the results of the organization process
+    if organized_files:
+        logging.info('Files have been organized.')
+        logging.info('Created folders:')
+        for folder in created_folders:
+            logging.info(folder)
+    else:
+        logging.info('No new files to organize.')
+except Exception as e:
+    logging.error(f'An error occurred: {e}')
+
