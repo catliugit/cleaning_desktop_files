@@ -52,4 +52,7 @@ Handling of name conflicts
 Any issues or warnings
 This output is useful for verifying the script's behavior and troubleshooting if necessary.
 
+## Conclusion
+This is a great script for anyone looking to automate tedious file organization tasks.
+
 
