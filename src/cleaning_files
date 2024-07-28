@@ -3,6 +3,10 @@ import shutil  # Allows copying and moving files.
 from datetime import datetime  # Provides classes for manipulating dates and times.
 import logging  # Provides a flexible framework for emitting log messages, which is useful for tracking and debugging.
 
+# Configure logging
+logging.basicConfig(level=logging.DEBUG,  # Set the level to DEBUG to capture all messages
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S')
 # Path to the Downloads folder
 downloads_path = os.path.expanduser('~/Downloads')
 
