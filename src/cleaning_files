@@ -18,3 +18,11 @@ file_type_to_folder = {
 def create_folder_if_not_exists(folder_path):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
+
+# Get the destination folder based on file type
+def get_destination_folder(filename):
+    for folder, extensions in file_type_to_folder.items():
+        if any(filename.lower().endswith(ext) for ext in extensions):
+            return folder
+    return None
+
