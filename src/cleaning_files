@@ -8,7 +8,7 @@ downloads_path = os.path.expanduser('~/Downloads')
 
 # Map file types to their respective folders
 file_type_to_folder = {
-    'Notes': ['Notes'],
+    'Notes': ['.txt'],
     'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff'],
     'Excel': ['.xls', '.xlsx', '.xlsm'],
     'CSV': ['.csv'],
