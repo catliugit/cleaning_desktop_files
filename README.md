@@ -27,7 +27,7 @@ It checks if a directory exists before creating it using os.makedirs() and uses 
 
 ## Steps to Use
 ## Download the Script:
-[File Organizer Python Script](https://github.com/catliugit/cleaning_desktop_files/blob/main/src/cleaning_files).
+[File Organizer Python Script](https://github.com/catliugit/organizing_desktop_files/blob/main/src/organizing_files.py).
 
 ## Run the Script:
 Ensure Python is installed on your system.
@@ -37,14 +37,14 @@ Place the script in your desired directory and execute it. The script will organ
 After execution, check the Downloads folder to see your files neatly organized into the new structure.
 
 ## Example
-Before Running the Script: The Downloads folder may appear cluttered with various file types. [See Example Here](https://github.com/catliugit/cleaning_desktop_files/blob/main/Before%20Cleanse.PNG).
+Before Running the Script: The Downloads folder may appear cluttered with various file types. [See Example Here](https://github.com/catliugit/organizing_desktop_files/blob/main/Before_Script_Run.PNG).
 After Running the Script: Files are organized into categorized and dated subfolders. Here are the expected outputs:
-[Month Year Folders, ](https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse.PNG)
-[File Type Folders, ](https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse_Folders.PNG)
-[File Classified in the Folder](https://github.com/catliugit/cleaning_desktop_files/blob/main/After%20Cleanse_2.PNG).
+[Month Year Folders, ](https://github.com/catliugit/organizing_desktop_files/blob/main/After_Script_Run_Month_Year_Folders.PNG)
+[File Type Folders, ](https://github.com/catliugit/organizing_desktop_files/blob/main/After_Script_Run_File_Type_Folders.PNG)
+[File Classified in the Folder](https://github.com/catliugit/organizing_desktop_files/blob/main/After_Script_Run_File_Organized.PNG).
 
 ## Logging Output
-[The log messages provide feedback on the actions taken](https://github.com/catliugit/cleaning_desktop_files/blob/main/Log%20Message.PNG).
+[The log messages provide feedback on the actions taken](https://github.com/catliugit/organizing_desktop_files/blob/main/After_Script_Run_Log_Message.PNG).
 
 ## Creation of folders
 Moving of files
